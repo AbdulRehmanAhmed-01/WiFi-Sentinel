@@ -1,0 +1,8 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>WiFi Sentinel</title><link rel="stylesheet" href="style.css"></head><body>
+<header><h1>◈ WiFi Sentinel</h1><p>Real Nearby Wi-Fi Awareness & Defensive Detection</p></header>
+<main><section class="hero"><small>PROJECT 6 • CYBERSECURITY</small><h2>Scan nearby Wi-Fi networks.</h2><p>Windows-visible Wi-Fi information with defensive risk indicators.</p><button onclick="location.reload()">↻ Refresh Dashboard</button><div class="notice"><b id="status">Waiting for scan data</b><p>Run START_SCANNER.bat, then refresh.</p></div></section>
+<section class="stats"><div>Total <b id="total">0</b></div><div>Safe <b id="safe">0</b></div><div>Suspicious <b id="suspicious">0</b></div><div>High Risk <b id="high">0</b></div></section>
+<section class="panel"><h3>Nearby Wi-Fi Networks</h3><table><thead><tr><th>SSID</th><th>Authentication</th><th>Encryption</th><th>Signal</th><th>Risk</th><th>Score</th></tr></thead><tbody id="rows"><tr><td colspan="6">Run scanner first.</td></tr></tbody></table></section>
+<section class="panel"><h3 id="name">No network selected</h3><h2 id="score">0/100</h2><b id="level">WAITING</b><h4>Risk indicators</h4><ul id="reasons"><li>No scan data loaded.</li></ul><p id="tip"></p></section>
+<section class="panel"><h3>Wi-Fi Safety Checklist</h3><p>☐ Verify SSID with a trusted source.</p><p>☐ Check authentication and encryption.</p><p>☐ Avoid sensitive activity on suspicious networks.</p></section></main><footer>Educational defensive scanner • No attacks or password collection</footer>
+<script src="wifi-data.js"></script><script src="script.js"></script></body></html>
